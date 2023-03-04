@@ -56,6 +56,7 @@ function rättkollaren() {
     var efternamn = document.getElementById("efternamn").value;
     var land = document.getElementById("land").value;
     var adress = document.getElementById("adress").value;
+    var postnummer = document.getElementById("postnummer").value;
     var mejl = document.getElementById("mejl").value;
     var köp = true;
 
@@ -102,6 +103,15 @@ function rättkollaren() {
         köp = false;
     } else if (adress != null || adress != "") {
         document.getElementById("feladress").innerHTML = "";
+    }
+
+    if (postnummer == null || postnummer == "") {
+        var postnummerFel = "Du skrev inte ditt postnummer, idiot.";
+        document.getElementById("felpostnummer").innerHTML = postnummerFel;
+        fel1.play();
+        köp = false;
+    } else if (adress != null || adress != "") {
+        document.getElementById("felpostnummer").innerHTML = "";
     }
 
     if (mejl == null || mejl == "") {

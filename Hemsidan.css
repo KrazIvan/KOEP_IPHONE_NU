@@ -3,7 +3,7 @@
   font-family: Verdana, Tahoma, sans-serif;
 }
 
-.felmodell, .felförnamn, .felefternamn, .felland, .feladress, .felmejl {
+.felmodell, .felförnamn, .felefternamn, .felland, .feladress, .felpostnummer, .felmejl {
   color: hsl(0, 88%, 36%);
   font-family: impact;
 } 
